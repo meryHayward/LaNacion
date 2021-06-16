@@ -1,0 +1,29 @@
+@import './mixins';
+@import './mediaScreen';
+
+.modulo-articles-1 {
+  @include grid-col-1;
+  @include media-screen;
+  padding: 2rem 0rem;
+  padding-right: 4rem;
+  border-right: 1px solid #cccccc;
+}
+
+.modulo-articles-2 {
+  @include grid-col-2;
+  @include media-screen;
+  padding: 1rem 0rem;
+}
+
+.modulo-articles-3 {
+  @include grid-col-4;
+  @include media-screen;
+  padding: 1rem 0rem;
+}
+
+.modulo-articles-4 {
+  display: grid;
+  padding: 1rem 0rem;
+  @include grid-col-3;
+  @include media-screen;
+}
